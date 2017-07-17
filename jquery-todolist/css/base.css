@@ -1,0 +1,96 @@
+*{
+	box-sizing: border-box;
+	transition: background .1s;
+	outline: none;
+}
+
+body{
+	background: #7f1a97;
+	color: #fff;
+}
+.container{
+	max-width: 900px;
+	margin:0 auto;
+	padding: 0 30px;
+}
+input[type=text],button[type=submit],input[type=date],.task-detail{
+	padding:10px;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+}
+h1{
+	text-align: center;
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after,.clearfix:before{
+	content: '';
+	display: block;
+	clear:both;
+}
+.add-task input[type=text]{
+	background: #ddd;
+	float: left;
+	width: 84%;
+	margin-right: 1%;
+}
+input[type=text]:hover,input[type=date]:hover,input[type=text]:focus{
+	background: #fff;
+}
+.add-task button[type=submit]{
+	width: 15%;
+	cursor: pointer;
+}
+.task-list{
+	margin:10px 0;
+}
+.task-item{
+	background:#fff;
+	color: #333;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0,2px,2px,rgba(0,0,0,.4);
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+.task-item:hover{
+	background:#ddd;
+}
+.task-detail-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:rgba(30,30,30,.4);
+}
+.task-detail{
+	background: #fff;
+	position: absolute;
+	width: 50%;
+	left: 50%;
+	top:100px;
+	text-align: center;
+	transform: translateX(-50%);
+}
+.task-detail .task-content{
+	color: #333;
+}
+.task-detail .task-desc{
+	margin:10px 0;
+}
+.task-detail .task-desc textarea{
+	width: 70%;
+	height: 100px;
+	padding: 10px;
+	overflow: hidden;
+}
+.fr{
+	float: right;
+	margin-right: 5px;
+}
+.task-detail input[name='content']{
+	border: 1px solid #333;
+}

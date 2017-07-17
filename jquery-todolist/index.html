@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>my_todo_list</title>
+	<link rel="stylesheet" href="node_modules/_normalize.css@7.0.0@normalize.css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/_store@2.0.12@store/dist/store.legacy.min.js"></script>
+	<script src="js/base.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>我的 todo-list</h1>
+		<form class="add-task clearfix">
+			<input type="text" placeholder="eg:记得买菜" name="content" autocomplete="off">
+			<button type="submit">submit</button>
+		</form>
+		<div class="task-list">
+		</div>
+		<div class="task-detail-bg" style="display: none;"></div>
+		<div class="task-detail" style="display: none;">
+		</div>
+	</div>
+</body>
+</html>
